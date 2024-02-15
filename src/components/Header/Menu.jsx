@@ -20,6 +20,27 @@ export default function Menu() {
         }
     }, [])
 
+    useEffect(() => {
+        function checkIfMobile() {
+            return window.matchMedia("(max-width: 768px)").matches;
+        }
+
+        function updatePhoneMode() {
+            setShow(checkIfMobile());
+        }
+
+        // Initial check
+        updatePhoneMode();
+
+        // Event listener to update phoneMode if screen size changes
+        window.addEventListener("resize", updatePhoneMode);
+
+        // Cleanup function to remove the event listener
+        return () => {
+            window.removeEventListener("resize", updatePhoneMode);
+        };
+    }, []);
+
     return (
         <div className="bg-gray-100 flex md:flex-col flex-row md:gap-10 gap-[88px] items-center justify-center max-w-[1200px] mx-auto md:px-5 py-3 w-full sm:flex sm:justify-evenly sm:flex-row">
             <Img
