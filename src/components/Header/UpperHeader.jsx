@@ -7,7 +7,7 @@ import { Img, Text } from "components";
 const UpperHeader = () => {
     const navigate = useNavigate();
     return (
-        <div className="bg-gray-900 flex flex-col h-[68px] md:h-auto items-center justify-center md:px-10 sm:px-5 px-[120px] w-full">
+        <div className="bg-gray-900 flex flex-col h-[68px] md:h-auto items-center justify-center md:px-10 sm:px-5 px-[120px] w-screen">
             <div className="flex sm:flex-col flex-row gap-3 h-[50px] md:h-auto items-center justify-center max-w-[1200px] mx-auto py-2 w-full sm:flex">
                 <Text
                     className="flex-1 text-base text-center text-white-A700 w-auto"

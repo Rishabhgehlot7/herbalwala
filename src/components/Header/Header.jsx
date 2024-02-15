@@ -4,7 +4,7 @@ import Menu from './Menu'
 
 export default function Header() {
     return (
-        <div className=' sticky top-0 left-0 z-10'>
+        <div >
             <UpperHeader />
             <Menu />
         </div>

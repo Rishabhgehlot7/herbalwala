@@ -25,7 +25,8 @@ export default function Menu() {
                 src="images/img_whatsappimage20231128.png"
                 alt="whatsappimageTwenty"
             />
-            <div className={`md:flex sm:flex-1 sm:flex-col md:flex-row gap-14  md:h-auto items-center md:justify-center p-2 md:w-auto      sm:w-[60%]  flex-col h-auto flex justify-center py-10 fixed bg-white-A700 left-0 top-0  ${show ? "duration-300 translate-x-[-500px]" : "duration-300 translate-x-0"}`} >
+            <div className={`gap-14 items-center p-2 w-[60%] md:flex-row md:static md:justify-evenly flex-row
+              sm:w-[60%] sm:z-10  sm:flex-col h-auto flex justify-center py-10 sm:fixed bg-gray-100 left-0 top-0  ${show ? "duration-300 translate-x-[-500px]" : "duration-300 translate-x-0"}`} >
                 <Text
                     className="text-center text-green-700 text-lg w-auto cursor-pointer"
                     size="txtOpenSansSemiBold18"
@@ -71,7 +72,7 @@ export default function Menu() {
                 size="xs"
                 variant="outline"
             ></Input>
-            <div className='text-2xl p-2 inline-block rounded-full md:hidden lg:hidder xl:hidden 2xl:hidder sm:block' onClick={() => setShow(!show)}>
+            <div className='text-2xl p-2  rounded-full hidden sm:block' onClick={() => setShow(!show)}>
                 <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="" width={25} />
             </div>
 
