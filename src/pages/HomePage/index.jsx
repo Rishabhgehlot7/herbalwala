@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, List, RatingBar, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header/Header";
+import Card from "components/card/Card";
 
 const HomePagePage = () => {
   const navigate = useNavigate();
@@ -38,217 +39,21 @@ const HomePagePage = () => {
                 </Text>
                 <Line className="bg-blue_gray-900_cc h-0.5 w-full" />
               </div>
+
               <div className="flex flex-col font-opensans h-[438px] md:h-auto items-start justify-start w-full">
                 <List
                   className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 h-[438px] justify-start w-full"
                   orientation="horizontal"
                 >
-                  <div
-                    className="common-pointer bg-white-A700 flex flex-1 flex-col gap-4 h-full items-start justify-start p-5 rounded-[16px] shadow-bs w-full"
-                    onClick={() => navigate("/product")}
-                  >
-                    <div
-                      className="bg-cover bg-no-repeat flex flex-col h-[244px] items-start justify-start p-2 rounded-lg w-full"
-                      style={{
-                        backgroundImage:
-                          "url('images/img_frame65_244x344.png')",
-                      }}
-                    >
-                      <div className="flex flex-col items-end justify-start md:pl-10 sm:pl-5 pl-[264px] w-full">
-                        <div className="h-16 relative w-16">
-                          <Img
-                            className="h-16 m-auto rounded-lg w-16"
-                            src="images/img_star1.svg"
-                            alt="starOne"
-                          />
-                          <Text
-                            className="absolute h-max inset-[0] justify-center m-auto text-center text-white-A700 text-xs"
-                            size="txtOpenSansBold12"
-                          >
-                            <>
-                              10%
-                              <br />
-                              off
-                            </>
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-1 items-start justify-center px-2 w-full">
-                      <Text
-                        className="text-blue_gray-900 text-xl w-full"
-                        size="txtOpenSansBold20"
-                      >
-                        Herbalvala Relief Balm
-                      </Text>
-                      <div className="flex flex-row gap-2 items-center justify-start w-full">
-                        <Text
-                          className="line-through text-base text-center text-red-800 w-auto"
-                          size="txtOpenSansLight16"
-                        >
-                          Rs 48
-                        </Text>
-                        <Text
-                          className="text-blue_gray-900 text-center text-xl w-auto"
-                          size="txtOpenSansRegular20"
-                        >
-                          Rs 40
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[344px]"
-                      shape="round"
-                      color="green_700"
-                      size="xl"
-                      variant="fill"
-                    >
-                      Add to cart
-                    </Button>
-                  </div>
-                  <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-full items-start justify-start p-5 rounded-[16px] shadow-bs w-full">
-                    <div
-                      className="bg-cover bg-no-repeat flex flex-col h-[244px] items-start justify-start p-2 rounded-lg w-full"
-                      style={{
-                        backgroundImage: "url('images/img_frame65_2.png')",
-                      }}
-                    >
-                      <div className="flex flex-col items-end justify-start md:pl-10 sm:pl-5 pl-[264px] w-full">
-                        <div className="h-16 relative w-16">
-                          <Img
-                            className="h-16 m-auto rounded-lg w-16"
-                            src="images/img_star1_64x64.svg"
-                            alt="starOne"
-                          />
-                          <Text
-                            className="absolute h-max inset-[0] justify-center m-auto text-center text-white-A700 text-xs"
-                            size="txtOpenSansBold12"
-                          >
-                            <>
-                              10%
-                              <br />
-                              off
-                            </>
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-1 items-start justify-center px-2 w-full">
-                      <Text
-                        className="text-blue_gray-900 text-xl w-full"
-                        size="txtOpenSansBold20"
-                      >
-                        <span className="text-blue_gray-900 font-opensans text-left font-bold">
-                          Rose Soap{" "}
-                        </span>
-                        <span className="text-blue_gray-900 font-opensans text-left text-[15px] font-normal">
-                          (Pack of 2)
-                        </span>
-                      </Text>
-                      <div className="flex flex-row gap-2 items-center justify-start w-full">
-                        <Text
-                          className="line-through text-base text-center text-red-800 w-auto"
-                          size="txtOpenSansLight16"
-                        >
-                          Rs 140
-                        </Text>
-                        <Text
-                          className="text-blue_gray-900 text-center text-xl w-auto"
-                          size="txtOpenSansRegular20"
-                        >
-                          Rs 100
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[344px]"
-                      shape="round"
-                      color="green_700"
-                      size="xl"
-                      variant="fill"
-                    >
-                      Add to cart
-                    </Button>
-                  </div>
-                  <div className="bg-white-A700 flex flex-1 flex-col gap-4 h-full items-start justify-start p-5 rounded-[16px] shadow-bs w-full">
-                    <div
-                      className="bg-cover bg-no-repeat flex flex-col h-[244px] items-start justify-start p-2 rounded-lg w-full"
-                      style={{
-                        backgroundImage: "url('images/img_frame65_3.png')",
-                      }}
-                    >
-                      <div className="flex flex-col items-end justify-start md:pl-10 sm:pl-5 pl-[264px] w-full">
-                        <div className="h-16 relative w-16">
-                          <Img
-                            className="h-16 m-auto rounded-lg w-16"
-                            src="images/img_star1_1.svg"
-                            alt="starOne"
-                          />
-                          <Text
-                            className="absolute h-max inset-[0] justify-center m-auto text-center text-white-A700 text-xs"
-                            size="txtOpenSansBold12"
-                          >
-                            <>
-                              20%
-                              <br />
-                              off
-                            </>
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-1 items-start justify-center px-2 w-full">
-                      <Text
-                        className="text-blue_gray-900 text-xl w-full"
-                        size="txtOpenSansBold20"
-                      >
-                        <span className="text-blue_gray-900 font-opensans text-left font-bold">
-                          Tatva Hair Oil{" "}
-                        </span>
-                        <span className="text-blue_gray-900 font-opensans text-left text-[15px] font-normal">
-                          (Pack of 2)
-                        </span>
-                      </Text>
-                      <div className="flex flex-row gap-2 items-center justify-start w-full">
-                        <Text
-                          className="line-through text-base text-center text-red-800 w-auto"
-                          size="txtOpenSansLight16"
-                        >
-                          Rs 498
-                        </Text>
-                        <Text
-                          className="text-blue_gray-900 text-center text-xl w-auto"
-                          size="txtOpenSansRegular20"
-                        >
-                          Rs 400
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[344px]"
-                      shape="round"
-                      color="green_700"
-                      size="xl"
-                      variant="fill"
-                    >
-                      Add to cart
-                    </Button>
-                  </div>
+                  <Card productImage="images/img_star1.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
+                  <Card productImage="images/img_star1_64x64.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
+                
                 </List>
               </div>
-            </div>
-            <Button
-              className="flex h-[60px] items-center justify-center mb-[321px] md:mt-0 mt-[158px] rotate-[180deg] w-[60px]"
-              shape="circle"
-              color="green_700"
-              size="xl"
-              variant="fill"
-            >
-              <Img src="images/img_arrowup.svg" alt="arrowup" />
-            </Button>
+            </div> 
           </div>
           <Button
-            className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[90px] mt-8"
+            className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[90px] mt-20 static"
             onClick={() => navigate("/shoppage")}
             rightIcon={
               <Img

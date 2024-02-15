@@ -185,7 +185,7 @@ const Footer = (props) => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-900 flex md:flex-col flex-row gap-12 items-center justify-center max-w-[1440px] p-3 w-full">
+          <div className="bg-gray-900 flex md:flex-col flex-row gap-12 items-center justify-center p-3 w-screen">
             <Text
               className="text-base text-right text-white-A700 w-auto"
               size="txtOpenSansRegular16"
@@ -193,7 +193,7 @@ const Footer = (props) => {
               We facilitate your payments through trusted gateways
             </Text>
             <Img
-              className="h-[33px] w-60"
+              className="h-[33px] w-auto"
               src="images/img_paymentgateways.svg"
               alt="paymentgateways"
             />
