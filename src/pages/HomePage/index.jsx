@@ -40,12 +40,15 @@ const HomePagePage = () => {
                 <Line className="bg-blue_gray-900_cc h-0.5 w-full" />
               </div>
 
-              <div className="flex flex-col font-opensans h-[438px] md:h-auto items-start justify-start w-full">
+              <div className="flex flex-col font-opensans h-auto md:h-auto items-start justify-start w-full">
                 <List
-                  className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 h-[438px] justify-start w-full"
+                  className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 h-auto justify-start w-full p-3"
                   orientation="horizontal"
                 >
                   <Card productImage="images/img_star1.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
+                  <Card productImage="images/img_star1_64x64.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
+                  <Card productImage="images/img_star1_64x64.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
+                  <Card productImage="images/img_star1_64x64.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
                   <Card productImage="images/img_star1_64x64.svg" discount={10} title="Herbalvala Relief Balm" actualPrice={48} price={40} />
                 
                 </List>
@@ -53,7 +56,7 @@ const HomePagePage = () => {
             </div> 
           </div>
           <Button
-            className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[90px] mt-20 static"
+            className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[90px]  static p-4"
             onClick={() => navigate("/shoppage")}
             rightIcon={
               <Img
@@ -67,6 +70,7 @@ const HomePagePage = () => {
               See all
             </div>
           </Button>
+
           <div className="flex flex-col font-unna gap-7 items-center justify-center max-w-[1200px] mt-[150px] mx-auto md:px-5 w-full">
             <div className="flex flex-col gap-[15px] items-center justify-start w-auto">
               <Text
@@ -94,7 +98,7 @@ const HomePagePage = () => {
                   </>
                 </Text>
                 <Button
-                  className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[400px]"
+                  className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[100%]"
                   shape="round"
                   color="green_700"
                   size="xl"
@@ -115,7 +119,7 @@ const HomePagePage = () => {
                   Toothpaste
                 </Text>
                 <Button
-                  className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[400px]"
+                  className="cursor-pointer font-bold h-16 leading-[normal] text-center text-xl w-[100%]"
                   shape="round"
                   color="green_700"
                   size="xl"
