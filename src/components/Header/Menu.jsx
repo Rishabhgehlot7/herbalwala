@@ -15,6 +15,8 @@ export default function Menu() {
         console.log(mediaQuery)
         if (mediaQuery.matches) {
             setShow(false)
+        } else {
+            setShow(true)
         }
     }, [])
 
